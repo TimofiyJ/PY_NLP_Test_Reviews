@@ -1,0 +1,14 @@
+This is my fork for IT-Jim trainee program. 
+
+The main goal was to classify the text and predict whether it is a negative or possitive review. 
+
+I have recently completed TF Google Bootcamp so TF library was chosen. The solution consists of 3 files:
+
+main.ipynb - here i tested the data, discovered whether i should add something to the dataset and understood the main goals, then I decided to use subword tokenization because the words sometimes were with grammatical errors and I also thought that subwords would be more effective and could unite similar, but unknown words. The model consists of Conv1D for discovering features of the texts, LSTM model and dropout so my model wouldn´t overfit.
+
+additional_training.ipynb Here I loaded my model and tokenizer and trained them additionally on larger dataset(https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews)
+
+inference.py - script for testing your data. 
+
+TO TEST YOU DATA RUN THIS COMMAND IN TERMINAL:
+python inference.py PATH_TO_DATA PATH_TO_RESULT
